@@ -19,7 +19,7 @@ export default function HomePage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:8000/getAllGames/');
+        const response = await fetch('https://universe-api-b3bv.onrender.com/getAllGames/');
         const data = await response.json();
         if (Array.isArray(data)) {
           setGames(data);
