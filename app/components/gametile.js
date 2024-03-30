@@ -6,7 +6,7 @@ export default function GameTile(data) {
         setLiked(!liked);
     };
 
-    const banner = "http://127.0.0.1:8000" + data.imageurl;
+    const banner = "https://universe-api-b3bv.onrender.com" + data.imageurl;
     return (
         <div className="gametilecontainer">
             <img src={banner} />
